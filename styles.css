@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "source-reg";
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: "source-demi";
+  src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: "source-bold";
+  src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+body {
+  margin: unset;
+}
+
+* {
+  font-family: "source-reg";
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.wrapper {
+  margin: 0 1.5rem;
+}
+
+.head__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head__heading-main {
+  color: #3d7b76;
+}
+
+.head__heading-button {
+  height: 30px;
+  background-color: #3d7b76;
+  color: white;
+}
+
+.head__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: unset;
+}
+
+.head__nav-link {
+  list-style: none;
+  color: #3d7b76;
+}
+
+.head__nav-link :hover {
+  color: #4e6194;
+  border-bottom: solid 1px #21b366;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+  height: 40vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.4)), to(rgba(50, 50, 50, 0.4))), url("./assets/burger.jpg");
+  background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url("./assets/burger.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.hero__title {
+  color: white;
+  width: 50%;
+}
+/*# sourceMappingURL=styles.css.map */

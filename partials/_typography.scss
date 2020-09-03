@@ -1,0 +1,18 @@
+$font-reg: "source-reg";
+$font-demi: "source-demi";
+$font-bold: "source-bold";
+
+@font-face{
+    font-family: $font-reg;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: $font-demi;
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face{
+    font-family: $font-bold;
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}

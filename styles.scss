@@ -1,0 +1,76 @@
+@import './partials/partials.scss';
+
+body{
+    margin: unset;
+}
+
+*{
+    font-family: $font-reg;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+button{
+    
+}
+
+.wrapper{
+    margin: 0 1.5rem;
+}
+
+.head{
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-main{
+            color: $turq;
+        }
+
+        &-button{
+            height: 30px;
+            background-color: $turq;
+            color: white;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: unset;
+        &-link{
+            list-style: none;
+            color: $turq;
+            :hover{
+                color: $light-blue;
+                border-bottom: solid 1px $green;
+            }
+        }
+    }
+}
+
+.main{
+
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+    height: 40vh;
+    background-image: linear-gradient(rgba(#323232, 0.4),rgba(#323232, 0.4)),url('./assets/burger.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &__title{
+        color: white;
+        width: 50%;
+    }
+}

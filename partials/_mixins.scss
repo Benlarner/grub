@@ -1,0 +1,27 @@
+//Media Query
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+
+@mixin button{
+    background-color: white;
+    text-decoration: unset;
+    border: 2px solid ;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: $font-bold;
+    &:hover{
+        color: white;
+    }
+    @content;
+}
