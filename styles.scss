@@ -1,5 +1,6 @@
 @import './partials/partials.scss';
 
+// Remove default styling
 body{
     margin: unset;
 }
@@ -13,14 +14,24 @@ a{
     color: unset;
 }
 
+// button style
 button{
     
 }
+// Grow effect on pictures
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+.grow:hover {
+     transform: scale(1.1); 
+    }
 
+ // wrapper for most sections
 .wrapper{
     margin: 0 1.5rem;
 }
 
+// header styles
 .head{
     &__heading{
         display: flex;
@@ -53,24 +64,87 @@ button{
         }
     }
 }
-
+// end of header styles
 .main{
 
 }
-
+// hero styles
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     text-transform: uppercase;
-    height: 40vh;
+    height: 400px;
     background-image: linear-gradient(rgba(#323232, 0.4),rgba(#323232, 0.4)),url('./assets/burger.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center center;
 
     &__title{
+        text-align: center;
         color: white;
         width: 50%;
     }
 }
+// end of hero styles
+
+// food picture/description
+.food{
+    padding-top: 3rem;
+    background-color: $light;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__meal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image{
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+    }
+
+    &__descrip{
+        text-transform: uppercase;
+        color: $blue;
+    }
+}
+
+// end of food pic/decriptions
+
+// our team styles
+.team{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+
+    &__image{
+        height: 200px;
+        border-radius: 100%;
+    }
+
+    &__name{
+        margin-bottom: unset;
+    }
+}
+
+// end of team styles
+
+// Footer styles

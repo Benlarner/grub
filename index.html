@@ -26,22 +26,59 @@
         <section class = "hero">
             <h2 class = "hero__title">Meal plans designed to be scrumptious!</h2>
         </section>
-        <section class = "food wrapper">
-
+        <section class = "food">
+            <div class = "food__container wrapper">
+                <div class = "food__meal">
+                    <img class = "food__image grow" src="./assets/pancakes.jpg" alt="Pancakes">
+                    <p class = "food__descrip">breakfast</p>
+                </div>
+                <div class = "food__meal">
+                    <img class = "food__image grow"  src="./assets/pasta.jpg" alt="Pasta">
+                    <p class = "food__descrip">lunch</p>
+                </div>
+                <div class = "food__meal">
+                    <img class = "food__image grow"  src="./assets/steak.jpg" alt="Steak">
+                    <p class = "food__descrip">dinner</p>
+                </div>
+            </div>      
         </section>
-        <section class = "nearby wrapper">
-
+        <section class = "team wrapper">
+            <div class = "team__container">
+                <h2>Meet the team!</h2>
+                <div class = "team__member">
+                    <img class = "team__image" src="./assets/ceo.png" alt="Owner">
+                    <p class = "team__name">Benjamin Larner</p>
+                    <p class = "team__role">CEO of GRUB</p>
+                </div>
+                <div class = "team__member">
+                    <img class = "team__image" src="./assets/chef.png" alt="Head Chef">
+                    <p class = "team__name">Joe Bloggs</p>
+                    <p class = "team__role">Head Chef</p>
+                </div>
+                <div class = "team__member">
+                    <img class = "team__image" src="./assets/nutritionist.png" alt="Nutritionist">
+                    <p class = "team__name">Simone Salmon</p>
+                    <p class = "team__role">Nutritionist</p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class = "foot wrapper">
-        <h2>GRUB</h2>
-        <div>
-            <h3>Find us on social media!</h3>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
+    <footer class = "foot">
+        <section class = "contact wrapper">
+            <h2 class = "contact__title">Contact us</h2>
+            <div class = "contact__container">
+              <h3 class = "contact__sub">How can we help?</h3>
+              <div class = "contact__submit">
+                  <form class = "contact__form" action="https://formspree.io/mzbjqdvq" id="usrform" method="post">
+                    <input class = "contact__details" type="text" name = "name" placeholder="Full Name">
+                    <input class = "contact__details" type="text" name = "_replyto" placeholder="Email Address">
+                    <textarea  name="message" id="usrform" cols="34" rows="12" placeholder="Get in touch!"></textarea>
+                    <button class = "contact__button" type="submit">Submit</button>
+                  </form> 
+              </div>
+            </div>
+        </section>
     </footer>
     
     <script src="script.js"></script>
