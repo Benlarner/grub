@@ -71,6 +71,7 @@ a {
           justify-content: space-between;
   list-style: none;
   padding: unset;
+  margin-bottom: 2rem;
 }
 
 .head__nav-link {
@@ -164,6 +165,10 @@ a {
           align-items: center;
 }
 
+.team__title {
+  color: #3d7b76;
+}
+
 .team__member {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,5 +190,61 @@ a {
 
 .team__name {
   margin-bottom: unset;
+}
+
+.foot {
+  padding: 1rem 0;
+  background-color: #dbdec0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #131166;
+}
+
+.contact__title {
+  text-align: center;
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 400px;
+}
+
+.contact__details {
+  width: 100%;
+}
+
+.contact textarea {
+  width: 100%;
+}
+
+.contact__button {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

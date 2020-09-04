@@ -54,6 +54,7 @@ button{
         justify-content: space-between;
         list-style: none;
         padding: unset;
+        margin-bottom: 2rem;
         &-link{
             list-style: none;
             color: $turq;
@@ -127,6 +128,10 @@ button{
         align-items: center;
     }
 
+    &__title{
+        color: $turq;
+    }
+
     &__member{
         display: flex;
         flex-direction: column;
@@ -148,3 +153,48 @@ button{
 // end of team styles
 
 // Footer styles
+
+.foot{
+    padding: 1rem 0;
+    background-color: $light;
+    height: fit-content;
+    color: $blue;
+}
+
+.contact{
+    &__title{
+        text-align: center;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__submit{
+
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 400px;
+    }
+
+    &__details{
+        width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+    &__button{
+        width: 100%;
+    }
+
+}
